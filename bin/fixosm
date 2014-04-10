@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+require File.join(File.dirname(__FILE__), *%w[.. lib osm_file])
+
+if ARGV.length < 2 then
+  puts "Usage: fixosm [input file] [output file]"
+else
+  input_filename = ARGV[0]
+  output_filename = ARGV[1]
+  print "Processing #{input_filename} to #{output_filename}..."
+  osm_file = OSMFile.new
+  osm_file.open(input_filename)
+  osm_file.fix_and_save(output_filename)
+  print "Done!"
+  puts
+end
