@@ -2,19 +2,11 @@
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-    gem 'fixosm'
+    $ gem install fixosm
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install fixosm
-
-## Usage
+    $ fixosm [input file] [output file]
 
 ## Contributing
 

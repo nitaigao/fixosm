@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require File.join(File.dirname(__FILE__), *%w[.. lib osm_file])
+require File.join(File.dirname(__FILE__), *%w[.. lib fixosm osm_file])
 
 if ARGV.length < 2 then
   puts "Usage: fixosm [input file] [output file]"
